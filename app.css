@@ -3977,12 +3977,17 @@ float:left; width:100%;
     .footer__social__item {
       list-style: none;
       display: inline-block;
-      margin: 0 10px; }
+      margin: 0 10px; position: fixed;
+    right: 93px;
+    bottom: 32px;
+    z-index: 99999;
+    font-family: SFProText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
     .footer__social__link {
       display: -ms-flexbox;
       display: flex;
-      width: 46px;
-      height: 46px;
+      width: 56px;
+      height: 56px;
       border: 2px solid rgba(144, 144, 144, 0.6);
       border-radius: 100%;
       -ms-flex-align: center;
@@ -3990,7 +3995,7 @@ float:left; width:100%;
       -ms-flex-pack: center;
           justify-content: center; }
       .footer__social__link .fa {
-        color: #ffd046; }
+        color: #5193c5; /* width: 50px !important; */}
       .footer__social__link:hover .fa {
         color: #dfa600; }
 
