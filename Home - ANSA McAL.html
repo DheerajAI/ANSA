@@ -14,8 +14,10 @@
 <!--    <link rel="stylesheet" href="--><!--/assets/css/app.css?ver=--><!--">-->
     <link rel="stylesheet" href="https://www.ansamcal.com/wp-content/themes/ansamcal/assets/css/lightslider.min.css">
     <!--fontawesome-->
-    <script src="https://chat.valentabpo.onereach.ai/lib/richWebChat.umd.min.js"></script>
-    <link rel="stylesheet" href="https://chat.valentabpo.onereach.ai/lib/richWebChat.css"/>
+
+    <script src="https://chat.orsolaas.onereach.ai/lib/richWebChat.umd.min.js"></script>
+    <link rel="stylesheet" href="https://chat.orsolaas.onereach.ai/lib/richWebChat.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400' rel='stylesheet' type='text/css'>
@@ -229,11 +231,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<li id="menu-item-507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-507"><a href="https://www.ansamcal.com/premier-card/apply-for-a-premier-card/">Apply For a Premier Card</a></li>
 </ul>
 </li>
-<li id="menu-item-1429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1429"><a href="/category/media/">Media Centre</a></li>
 <li id="menu-item-308" class="navigation__item menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="https://www.ansamcal.com/contact-us/">Contact Us</a></li>
 </ul>		</nav>
 
         <!-- Wp Navigation End -->
+        <div class="social">
+			<!--<input type="search" value="" placeholder="Search" class="top-search-txt-bx">-->
+			<form role="search" method="get" class="search-form" action="https://www.ansamcal.com/">
+			<label>
+			<input type="search" class="search-field top-search-txt-bx" placeholder="Search" value="" name="s" />
+			</label>
+			<button style="display:none;" type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+			</form>
+            <ul class="social__list">
+                
+                <!--  -->
+                <li class="social__item"><a class="social__link" href="mailto:bot.ai@valenta.io" style="text-decoration:none">Email Us</a></li>
+
+                </li>
+            </ul>
+
+        </div>
         <div class="social">
 			<!--<input type="search" value="" placeholder="Search" class="top-search-txt-bx">-->
 			<form role="search" method="get" class="search-form" action="https://www.ansamcal.com/">
@@ -250,7 +268,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </a></li>
             </ul>
+
         </div>
+        
     </div>
 
 <script>
@@ -759,79 +779,36 @@ var JQLBSettings = {"fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":
 
 <script type='text/javascript' src='https://www.ansamcal.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.5.6' id='wpcf7-recaptcha-js'></script>
 
-
-<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
-    <li class="mfb-component__wrap">
-      <a href="#" class="mfb-component__button--main">
-          <img src="logo2x (1).png">
-  
-      </a>
-      <ul class="mfb-component__list">
-        <li>
-          <a href="https://chat.orsolaas.onereach.ai/gbnpAxX6SNyaXllINzjEpQ/0keoqca?loader=hidden" data-mfb-label="Start a conversation" class="mfb-component__button--child">
-            <i class="mfb-component__child-icon ion-social-octocat"></i>
-            <img src="https://files.orsolaas.api.onereach.ai/public/81b9e903-15fa-48dc-9a5e-59483738c4a5/Team-Rakshithah/Dheeraj-CSS/Bot%20Pics/contact-unscreen.gif" width="100px" height="10px">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/messages/t/108523178517926/" data-mfb-label="Connect on facebook" class="mfb-component__button--child" >
-            <img src="https://files.orsolaas.api.onereach.ai/public/81b9e903-15fa-48dc-9a5e-59483738c4a5/Team-Rakshithah/Dheeraj-CSS/Bot%20Pics/371907490-FACEBOOK-ICON-400px-unscreen.gif">
-          </a>
-        </li>
-
-        <li>
-          <a href="tel:+13034594847"
-             data-mfb-label="Call on +13034594847" class="mfb-component__button--child" >
-             <img src="https://files.orsolaas.api.onereach.ai/public/81b9e903-15fa-48dc-9a5e-59483738c4a5/Team-Rakshithah/Dheeraj-CSS/Bot%20Pics/incoming-call-unscreen.gif">
-          </a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-
-<!-- build:js mfb.js -->
-<script src="../dist/mfb.js"></script>
-<!-- endbuild -->
+<div id="rwc"></div>
 <script>
-
-  var panel = document.getElementById('panel'),
-      menu = document.getElementById('menu'),
-      showcode = document.getElementById('showcode'),
-      selectFx = document.getElementById('selections-fx'),
-      selectPos = document.getElementById('selections-pos'),
-      // demo defaults
-      effect = 'mfb-zoomin',
-      pos = 'mfb-component--br';
-
-  showcode.addEventListener('click', _toggleCode);
-  selectFx.addEventListener('change', switchEffect);
-  selectPos.addEventListener('change', switchPos);
-
-  function _toggleCode() {
-    panel.classList.toggle('viewCode');
-  }
-
-  function switchEffect(e){
-    effect = this.options[this.selectedIndex].value;
-    renderMenu();
-  }
-
-  function switchPos(e){
-    pos = this.options[this.selectedIndex].value;
-    renderMenu();
-  }
-
-  function renderMenu() {
-    menu.style.display = 'none';
-    // ?:-)
-    setTimeout(function() {
-      menu.style.display = 'block';
-      menu.className = pos + effect;
-    },1);
-  }
-
+  document.addEventListener("DOMContentLoaded", function () {
+    var RWC = richWebChat.default
+    var app = new RWC({
+      container: '#rwc', // DOM element selector where chat will be inserted
+      chatUrl: 'https://chat.orsolaas.onereach.ai/gbnpAxX6SNyaXllINzjEpQ/0keoqca?loader=hidden', // url of your chat. required
+      autoExpandDelay: 15000,
+      position: 'bottom-right',
+      inviteMessage: "",
+      inviteButton: "",
+      inviteImage: undefined,
+      showCloseIcon: false,
+      inviteTimeout: 5000,
+      allowChangeChatWindowSize: false,
+      allowDrag: true,
+      widgetColor: 'transparent',
+      allowStartNewConversation: false,
+      thumbLogo: 'https://files.orsolaas.api.onereach.ai/public/81b9e903-15fa-48dc-9a5e-59483738c4a5/Team-Rakshithah/Dheeraj-CSS/logo2x%20(1).png',
+      animation: 'pulse', // 'pulse', 'ring', 'zoom',
+      appearance: {
+        blurredBackground: false
+      },
+      pageData: {
+        fname: 'foo'
+      }
+    })
+  });
 </script>
+
 
 </body>
 </html>
