@@ -3983,6 +3983,12 @@ float:left; width:100%;
     z-index: 99999;
     font-family: SFProText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+li.footer__social__item:hover {background: #0076bc;}
+
+li.footer__social__item {}
+
+li.footer__social__item.a.hover {}
     .footer__social__link {
       display: -ms-flexbox;
       display: flex;
