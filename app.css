@@ -3226,7 +3226,9 @@ a.social__link {}
     }
   }
   .container__three .news__body {
+    margin: 0px 0px 0px -196px;
     justify-content: space-between;
+    width: 1200px;
   }
   .news__body-gallery,
   .news__body-content {
